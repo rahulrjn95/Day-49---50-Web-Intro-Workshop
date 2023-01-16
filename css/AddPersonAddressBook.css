@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+.header{
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid;
+    width: 85%;
+}
+.logo-content-img{
+    border: solid 0px #42515f;
+}
+.address-text{
+    font: normal normal bold 20px/25px Arial ;
+    font-family: "Arial";
+    letter-spacing: 0px;
+    color: #1779e9;
+    text-transform: capitalize;
+    font-style: bold;
+}
+.address-book-text{
+    font: normal normal bold 20px/25px Arial ;
+    font-family: "Arial";
+    color: #2d343a;
+    font-style: bold;
+    
+}
+*{box-sizing: border-box;}
