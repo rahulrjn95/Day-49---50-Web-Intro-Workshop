@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Person Address Book</title>
     <link rel="stylesheet" href="/css/AddPersonAddressBook.css">
+    <script defer src="/js/AddressBook.js"></script>
+    <script defer src="/js/AddressBook.js"></script>
 </head>
 <body>
     <header class="header-content">
@@ -18,7 +20,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save();return false">
+        <form class="form" action="#" onsubmit="save()">
         <div class="form-head" style="text-align:center;">
             <h2>PERSON ADDRESS FORM</h2>
         </div>
@@ -33,9 +35,10 @@
                 <error-output class="address-error" for="Address"></error-output>
             </div>
             <div class="row-content">
-                <label class="label text" for="selectCity"></label>
+                <label class="label text" for="city"></label>
                 <div class="label text">
-                    <select id="selectCity" name="SelectCity">
+                    <select id="city" name="city">
+                        <option value="" selected disabled hidden>Select City</option>
                         <option value="Ambala">Ambala</option>
                         <option value="Agra">Agra</option>
                         <option value="Asansol">Asansol</option>
@@ -69,7 +72,9 @@
                         <option value="Shimla">Shimla</option>
                         <option value="Raipur">Raipur</option>
                     </select>
-                    <select id="selectState" name="SelectState">
+                    <label class="label-text" for="state"></label>
+                    <select id="state" name="state">
+                        <option value="" selected disabled hidden>Select State</option>
                         <option value="Odisha">Odisha</option>
                         <option value="West Bengal">West Bengal</option>
                         <option value="AndhraPradesh">AndhraPradesh</option>
@@ -94,13 +99,13 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="label text" for="ZipCode"></label>
-                <input class="input" type="number" id="ZipCode" name="ZipCode" placeholder="Zip Code....." required>
+                <label class="label text" for="zip"></label>
+                <input class="input" type="number" id="zip" name="zip" placeholder="Zip Code....." required>
             </div>
             <div class="row-content">
-                <label class="label text" for="tel"></label>
-                <input class="input" type="tel" id="tel" name="tel" placeholder="Phone Number" required>
-                <error-output class="number-error" for="tel"></error-output>
+                <label class="label text" for="phone"></label>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <error-output class="number-error" for="phone"></error-output>
             </div>
             <div class="buttonParent">
                 <div class="Add-reset">
@@ -110,7 +115,5 @@
             </div>
         </form>
     </div>
-    <script src="/js/AddressBook.js"></script>
-    <script src="AddAddressBook.js"></script>
 </body>
 </html>
